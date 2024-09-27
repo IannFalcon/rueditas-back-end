@@ -9,7 +9,6 @@ import pe.edu.cibertec.rueditas_back_end.dto.BuscarVehiculoRequestDTO;
 import pe.edu.cibertec.rueditas_back_end.dto.BuscarVehiculoResponseDTO;
 import pe.edu.cibertec.rueditas_back_end.service.BuscarVehiculoService;
 
-import java.io.IOException;
 import java.time.Duration;
 import java.util.Arrays;
 
@@ -25,8 +24,8 @@ public class RueditasController {
 
         try {
 
-            // Se pausa la ejecución del hilo actual durante 60 segundos
-            Thread.sleep(Duration.ofSeconds(60));
+            // Se pausa la ejecución del hilo actual durante 15 segundos
+            Thread.sleep(Duration.ofSeconds(15));
 
             // Se procede con la busqueda del vehiculo
             String[] datosVehiculo = buscarVehiculoService.buscarVehiculo(buscarVehiculoRequestDTO);
